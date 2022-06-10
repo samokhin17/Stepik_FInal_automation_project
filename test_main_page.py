@@ -10,17 +10,7 @@ def test_guest_can_go_to_login_page(browser):
     page.go_to_login_page()
     login_page = LoginPage(browser, browser.current_url)
     login_page.should_be_login_page()
-    # login_page.should_be_login_url()
-    # login_page.should_be_login_page()
-    # login_page.should_be_register_form()
 
-    browser.get(link)
-    go_to_login_page(browser)
-
-
-def go_to_login_page(browser):
-    login_link = browser.find_element(By.CSS_SELECTOR, "#login_link")
-    login_link.click()
 
 
 # start command 'pytest -v --tb=line --language=en test_main_page.py'
