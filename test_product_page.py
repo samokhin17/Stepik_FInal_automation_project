@@ -1,5 +1,5 @@
-from .Pages.product_page import ProductPage
 import pytest
+
 from .Pages.product_page import ProductPage
 
 product_base_link = "http://selenium1py.pythonanywhere.com/catalogue/coders-at-work_207"
@@ -18,3 +18,4 @@ def test_guest_can_add_product_to_basket(browser, link):
     page.solve_quiz_and_get_code()
     page.should_be_correct_name()
     page.should_be_correct_price()
+
