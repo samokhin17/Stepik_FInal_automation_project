@@ -4,7 +4,7 @@ from selenium.webdriver.common.by import By
 
 class ProductPage(BasePage):
     def add_to_basket(self):
-        basket = self.browser.find_element(*ProductPageLocators.BASKET)
+        basket = self.browser.find_element(*ProductPageLocators.ADD_TO_BASKET)
         basket.click()
 
     def should_be_correct_name(self):
